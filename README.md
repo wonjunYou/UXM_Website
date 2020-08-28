@@ -1,7 +1,5 @@
 # UX Media web site
 
-===
-
 Project in Myongji University UX Media Lab
 
 ## Introduction
