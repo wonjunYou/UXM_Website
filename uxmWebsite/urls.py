@@ -20,5 +20,6 @@ from uxmweb_app import views
 urlpatterns = [
     path(r'^admin/', admin.site.urls),
     path('',views.main, name="main"),
-    path(r'publication/',views.publication, name="publication"),
+    path(r'^publication/',views.publication, name="publication"),
+    path(r'^project/',views.project, name ="project")
 ]

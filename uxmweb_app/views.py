@@ -29,6 +29,9 @@ def publication(request):
         "author":"논문 저자6",
         "publication_data":"어디어디학술지 몇년 몇월 몇일"}]
     return render(request, 'publication.html', {"journal_paper_list":journal_paper_list, "conference_paper_list":conference_paper_list})
-    
+
+def project(request):
+    pj = "pj"
+    return render(request, 'project.html',{"pj":pj})
 def main(request):
     return render(request, 'main.html')
