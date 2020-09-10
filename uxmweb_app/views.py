@@ -8,3 +8,6 @@ def publication(request):
     
 def main(request):
     return render(request, 'main.html')
+    
+def member(request):
+    return render(request, 'member.html')
