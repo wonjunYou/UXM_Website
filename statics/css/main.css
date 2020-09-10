@@ -3056,5 +3056,12 @@ footer ul{
 			#footer header.major {
 				margin-bottom: 1em;
 			}
-
 	}
+
+/* publication paper */
+.paper_header h1{
+	font-size: 32px;
+}
+#paper_id {
+	font-size: 32px;
+}

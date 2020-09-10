@@ -2,7 +2,30 @@
 {% block title %} Publication {% endblock title %} 
 {% block mainview %} {% endblock mainview %} 
 {% block content %}
-<article id="paper">
-{{test}}
-</article>
+<main class="container">
+	<section class="paper_container">
+		<header class="paper_header">
+			<h1 id="paper_id">Journal</h1>
+		</header>
+		{% for paper in journal_paper_list%}
+			<article class="paper_article">
+				<h2 class="paper_title">{{paper.title}}</h2>
+				<p class="paper_author">{{paper.author}}</p>
+				<p class="paper_publication_data">{{paper.publication_data}}</p>
+			</article>
+		{% endfor %}
+	</section>
+	<section class="paper_container">
+		<header class="paper_header">
+			<h1>Conference</h1>
+		</header>
+		{% for paper in conference_paper_list%}
+			<article class="paper_article">
+				<h2 class="paper_title">{{paper.title}}</h2>
+				<p class="paper_author">{{paper.author}}</p>
+				<p class="paper_publication_data">{{paper.publication_data}}</p>
+			</article>
+		{% endfor %}
+	</section>
+</main>
 {% endblock content %}
