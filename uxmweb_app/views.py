@@ -35,3 +35,6 @@ def project(request):
     return render(request, 'project.html',{"pj":pj})
 def main(request):
     return render(request, 'main.html')
+    
+def member(request):
+    return render(request, 'member.html')

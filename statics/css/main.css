@@ -3058,10 +3058,30 @@ footer ul{
 			}
 	}
 
+<<<<<<< HEAD
+	}
+
+/* member */
+.memberTitle {
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+.memberImage {
+	width: 80%;
+	margin-left: 3em;   
+	padding:1px;
+	border:1px solid #7d8899;
+}
+
+.memberName {
+	font-weight: bold;
+=======
 /* publication paper */
 .paper_header h1{
 	font-size: 32px;
 }
 #paper_id {
 	font-size: 32px;
+>>>>>>> 4dc90feb3f97324ef47944fa868935d90597986e
 }
