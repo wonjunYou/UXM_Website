@@ -3065,80 +3065,106 @@ footer ul{
 			#footer header.major {
 				margin-bottom: 1em;
 			}
-
 	}
-	.slideshow-container {
-		max-width: 1400px;
-		position: relative;
-		margin: auto;
-		height: 500px;
-		background-color:#86BF3E;
-	  }
-	  
-	  .slides {
-		display:none;
-	  }
-	  
-	  /* previous, next button. */
-	  .prev, .next {
-		cursor: pointer;
-		position: absolute;
-		top: 50%;
-		width: auto;
-		margin-top: -22px;
-		padding: 16px;
-		color: white;
-		font-weight: bold;
-		font-size: 18px;
-		transition: 0.6s ease;
-		border-radius: 0 3px 3px 0;
-		user-select: none;
-	  }
 
-	  .next {
-		right: 0;
-	  }
-	  
-	  .prev:hover, .next:hover {
-		background-color: rgba(0,0,0,0.8);
-	  }
-	  
-	  /* Caption text */
-	  .text {
-		color: #FFFFFF;
-		position: absolute;
-		font-size: 14px;
-		padding: 8px 12px;
-		bottom: 8px;
-		width: 100%;
-		text-align: center;
-	  }
-	  
-	  .dot {
-		cursor: pointer;
-		height: 15px;
-		width: 15px;
-		margin: 0 2px;
-		background-color: #bbb;
-		border-radius: 50%;
-		display: inline-block;
-		transition: background-color 0.6s ease;
-	  }
-	  
-	  .active, .dot:hover {
-		background-color: #717171;
-	  }
-	  
-	  .fade {
-		-webkit-animation-name: fade;
-		-webkit-animation-duration: 1.5s;
-		animation-name: fade;
-		animation-duration: 1.5s;
-	  }
-	  #content{
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 1rem;
-		font-size: 1.2rem;
-		color: #888;
-	  }
+/* member */
+.memberTitle {
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+.memberImage {
+	width: 80%;
+	margin-left: 3em;   
+	padding:1px;
+	border:1px solid #7d8899;
+}
+
+.memberName {
+	font-weight: bold;
+}
+
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+  height: 500px;
+  background-color:#86BF3E;
+  }
+
+  .slides {
+  display:none;
+  }
+
+  /* previous, next button. */
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+
+  .next {
+  right: 0;
+  }
+
+  .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+  color: #FFFFFF;
+  position: absolute;
+  font-size: 14px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  }
+
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+
+  .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+  #content{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #888;
+  }
+
+
+/* publication paper */
+.paper_header h1{
+	font-size: 32px;
+}
+#paper_id {
+	font-size: 32px;
+}

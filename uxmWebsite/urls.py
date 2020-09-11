@@ -22,4 +22,10 @@ urlpatterns = [
     path(r'^admin/', admin.site.urls),
     path('',views.main, name="main"),
     path(r'^publication/',views.publication, name="publication"),
+<<<<<<< HEAD
+    path(r'member/',views.member, name="member"),
+] 
+=======
+    path(r'^project/',views.project, name ="project")
 ]
+>>>>>>> 4dc90feb3f97324ef47944fa868935d90597986e
