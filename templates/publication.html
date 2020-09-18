@@ -2,7 +2,45 @@
 {% block title %} Publication {% endblock title %} 
 {% block mainview %} {% endblock mainview %} 
 {% block content %}
-<article id="paper">
-{{test}}
-</article>
+<div class="wrapper">
+	<main class="container">
+		{% for paper_row in paper_table %}
+			{% if paper_row.is_latest %}
+			<section class="paper-container">
+			{% else %}
+			<section class="paper-dropdown">
+			{% endif %}
+				<header class="paper-year">
+					<h2>{{paper_row.year_data}}</h2>
+					<div class="paper-dropdown-icon"><i class="fas fa-angle-up"></i></div>
+				</header>
+				<hr/>
+				<section class="journal-papers">
+					<header>
+						<h3>Journal</h3>
+					</header>
+					{% for paper in paper_row.journal_paper_list %}
+					<article class="paper">
+						<h4 class="paper_title">{{paper.title}}</h4>
+						<p class="paper_author">{{paper.author}}</p>
+						<p class="paper_publication_data">{{paper.publication_data}}</p>
+					</article>
+					{% endfor %}
+				</section>
+				<section class="conference-papers">
+					<header>
+						<h3>Conference</h3>
+					</header>
+					{% for paper in paper_row.conference_paper_list %}
+					<article class="paper">
+						<h4 class="paper_title">{{paper.title}}</h4>
+						<p class="paper_author">{{paper.author}}</p>
+						<p class="paper_publication_data">{{paper.publication_data}}</p>
+					</article>
+					{% endfor %}
+				</section>
+			</section>
+		{% endfor %}
+	</main>
+</div>
 {% endblock content %}

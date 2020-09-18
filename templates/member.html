@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %} Members {% endblock title %} 
+{% block mainview %}
+<section id="hero" class="container">
+  <header>
+    <h2>
+    </h2>
+  </header>
+  <h2>Members</h2>
+</section>
+{% endblock mainview %} 
+{% load static %}
+{% block content %}
+<!-- Member -->
+<div class='wrapper'>
+  <div class='container' id="main">
+    <header class='memberTitle'>
+      <h2>Professor</h2>
+      <br/>
+    </header>
+    <div class="row features">
+      <section class="col-4 col-12-narrower featrue">
+        <img src="{% static 'images/professorK.jpg' %}" alt="Professor" class="memberImage"/>
+      </section>
+      <section class="col-8 col-12-narrower featrue">
+        <h3 class='memberName'>KIM, Sang-Kyun</h3>
+        <br/>
+        <p>지도교수 김상균 (Tel. 031)330-6443</p>
+        <p>소속: 명지대학교 융합소프트웨어학부</p>
+        <p>직위(직급): 지도교수</p>
+        <p>이메일: goldmunt@gmail.com</p>
+      </section>
+    </div>
+    <br/>
+    <br/>
+    <div class='memberTitle'>
+      <h2>Students</h2>
+    </div>
+    <br/>
+    <div class="row features">
+      <section class="col-4 col-12-narrower featrue">
+        <img src="{% static 'images/dojinYou.jpg' %}" alt="Professor" class="memberImage"/>
+      </section>
+      <section class="col-8 col-12-narrower featrue">
+        <h3 class='memberName'>You, dojin</h3>
+        <br/>
+        <p>소속: 명지대학교 융합소프트웨어학부</p>
+        <p>직위(직급): 학부연구생</p>
+        <p>이메일: dojin@gmail.com</p>
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock content %}

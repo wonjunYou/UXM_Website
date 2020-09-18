@@ -1,105 +1,87 @@
 {% extends 'base.html' %}
 {% block title %} UX Media Lab {% endblock title %} 
-{% block mainview %} {% endblock mainview %} 
+{% block mainview %}
+<!-- Hero -->
+<section id="hero" class="container">
+	<header>
+		<h3>Myongji University</h3>	
+		<h2>UX Media Lab</h2>
+	</header>
+	<p>Director Sangkyun Kim Ph.D University of lowa</p>
+</section>
+{% endblock mainview %} 
 {% block content %}
 <!-- Main -->
 <div class="wrapper">
+
 	<div class="container" id="main">
 		<!-- Content -->
-		<article id="content">
-			<header>
-				<h2>No Sidebar</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur et sed adipiscing elit dolor
-					neque semper.
-				</p>
-			</header>
-			<a href="#" class="image featured"
-				><img src="images/pic06.jpg" alt=""
-			/></a>
-			<p>
-				Ut sed tortor luctus, gravida nibh eget, volutpat odio. Proin rhoncus,
-				sapien mollis luctus hendrerit, orci dui viverra metus, et cursus nulla
-				mi sed elit. Vestibulum condimentum, mauris a mattis vestibulum, urna
-				mauris cursus lorem, eu fringilla lacus ante non est. Nullam vitae
-				feugiat libero, eu consequat sem. Proin tincidunt neque eros. Duis
-				faucibus blandit ligula, mollis commodo risus sodales at. Sed rutrum et
-				turpis vel blandit. Nullam ornare congue massa, at commodo nunc
-				venenatis varius. Praesent mollis nisi at vestibulum aliquet. Sed
-				sagittis congue urna ac consectetur.
-			</p>
-			<p>
-				Mauris eleifend eleifend felis aliquet ornare. Vestibulum porta velit at
-				elementum gravida nibh eget, volutpat odio. Proin rhoncus, sapien mollis
-				luctus hendrerit, orci dui viverra metus, et cursus nulla mi sed elit.
-				Vestibulum condimentum, mauris a mattis vestibulum, urna mauris cursus
-				lorem, eu fringilla lacus ante non est. Nullam vitae feugiat libero, eu
-				consequat sem. Proin tincidunt neque eros. Duis faucibus blandit ligula,
-				mollis commodo risus sodales at. Sed rutrum et turpis vel blandit.
-				Nullam ornare congue massa, at commodo nunc venenatis varius. Praesent
-				mollis nisi at vestibulum aliquet. Sed sagittis congue urna ac
-				consectetur.
-			</p>
-			<p>
-				Vestibulum pellentesque posuere lorem non aliquam. Mauris eleifend
-				eleifend felis aliquet ornare. Vestibulum porta velit at elementum
-				elementum.
-			</p>
-		</article>
+		<section class="slideshow-container">
+			<div class="slides fade">
+				<img src="" style="width:100%">
+				<div class="text">Caption One</div>
+			</div>
 
-		<div class="row features">
-			<section class="col-4 col-12-narrower feature">
-				<div class="image-wrapper first">
-					<a href="#" class="image featured"
-						><img src="images/pic03.jpg" alt=""
-					/></a>
-				</div>
-				<header>
-					<h3>Dolor sit consequat magna</h3>
-				</header>
-				<p>
-					Lorem ipsum dolor sit amet consectetur et sed adipiscing elit.
-					Curabitur vel sem sit dolor neque semper magna lorem ipsum.
-				</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Elevate my awareness</a></li>
-				</ul>
-			</section>
-			<section class="col-4 col-12-narrower feature">
-				<div class="image-wrapper">
-					<a href="#" class="image featured"
-						><img src="images/pic04.jpg" alt=""
-					/></a>
-				</div>
-				<header>
-					<h3>Dolor sit consequat magna</h3>
-				</header>
-				<p>
-					Lorem ipsum dolor sit amet consectetur et sed adipiscing elit.
-					Curabitur vel sem sit dolor neque semper magna lorem ipsum.
-				</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Elevate my awareness</a></li>
-				</ul>
-			</section>
-			<section class="col-4 col-12-narrower feature">
-				<div class="image-wrapper">
-					<a href="#" class="image featured"
-						><img src="images/pic05.jpg" alt=""
-					/></a>
-				</div>
-				<header>
-					<h3>Dolor sit consequat magna</h3>
-				</header>
-				<p>
-					Lorem ipsum dolor sit amet consectetur et sed adipiscing elit.
-					Curabitur vel sem sit dolor neque semper magna lorem ipsum.
-				</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Elevate my awareness</a></li>
-				</ul>
-			</section>
-		</div>
+			<div class="slides fade">
+				<img src="" style="width:100%">
+				<div class="text">Caption Two</div>
+			</div>
+
+			<div class="slides fade">
+				<img src="" style="width:100%">
+				<div class="text">Caption Three</div>
+			</div>
+			
+			<!-- Next and previous buttons-->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</section>
 	</div>
+	<br>
+	<!--under dots-->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+
+	<article id="content">
+		<header>
+			<h2>Introduction</h2>
+			<p>
+				 UX Media Lab : Introduction and simple welcoming writings.
+			</p>
+		</header>
+		<p>
+			Ut sed tortor luctus, gravida nibh eget, volutpat odio. Proin rhoncus,
+			sapien mollis luctus hendrerit, orci dui viverra metus, et cursus nulla
+			mi sed elit. Vestibulum condimentum, mauris a mattis vestibulum, urna
+			mauris cursus lorem, eu fringilla lacus ante non est. Nullam vitae
+			feugiat libero, eu consequat sem. Proin tincidunt neque eros. Duis
+			faucibus blandit ligula, mollis commodo risus sodales at. Sed rutrum et
+			turpis vel blandit. Nullam ornare congue massa, at commodo nunc
+			venenatis varius. Praesent mollis nisi at vestibulum aliquet. Sed
+			sagittis congue urna ac consectetur.
+		</p>
+		<p>
+			Mauris eleifend eleifend felis aliquet ornare. Vestibulum porta velit at
+			elementum gravida nibh eget, volutpat odio. Proin rhoncus, sapien mollis
+			luctus hendrerit, orci dui viverra metus, et cursus nulla mi sed elit.
+			Vestibulum condimentum, mauris a mattis vestibulum, urna mauris cursus
+			lorem, eu fringilla lacus ante non est. Nullam vitae feugiat libero, eu
+			consequat sem. Proin tincidunt neque eros. Duis faucibus blandit ligula,
+			mollis commodo risus sodales at. Sed rutrum et turpis vel blandit.
+			Nullam ornare congue massa, at commodo nunc venenatis varius. Praesent
+			mollis nisi at vestibulum aliquet. Sed sagittis congue urna ac
+			consectetur.
+		</p>
+		<p>
+			Vestibulum pellentesque posuere lorem non aliquam. Mauris eleifend
+			eleifend felis aliquet ornare. Vestibulum porta velit at elementum
+			elementum.
+		</p>
+	</article>
 </div>
+
+
 {% endblock content %}
