@@ -21,7 +21,10 @@ from uxmweb_app import views
 urlpatterns = [
     path(r'^admin/', admin.site.urls),
     path('',views.main, name="main"),
+    path(r'^publication/',views.publication, name="publication"),
+    path(r'project/',views.project,name="project"),
     path('publication/',views.publication, name="publication"),
     path('member/',views.member, name="member"),
     path('project/',views.project, name ="project"),
+    path('notice/',views.notice, name="notice")
 ]

@@ -51,6 +51,9 @@ def publication(request):
 def project(request):
     pj = "pj"
     return render(request, 'project.html',{"pj":pj})
+def notice(request):
+    notice = "notice"
+    return render(request, 'notice.html',{"notice":notice})
 def main(request):
     return render(request, 'main.html')
     
