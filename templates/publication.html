@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block title %} Publication {% endblock title %} 
-{% block mainview %} {% endblock mainview %} 
+{% block headtitle %}Publication{% endblock headtitle %}
 {% block content %}
-<div class="wrapper">
-	<main class="container">
+<div class="__wrapper">
+	<main class="__container">
 		{% for paper_row in paper_table %}
 			{% if paper_row.is_latest %}
 			<section class="paper-container">
