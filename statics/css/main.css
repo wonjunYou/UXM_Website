@@ -2414,6 +2414,10 @@ footer ul{
 				padding: 5em 0 5em 0;
 			}
 
+			.main_wrapper{
+				padding-bottom: 5em;
+			}
+
 			#header-wrapper {
 				padding: 2em 0 2em 0;
 			}
@@ -3085,15 +3089,23 @@ footer ul{
 }
 
 .slideshow-container {
-  max-width: 1400px;
-  position: relative;
-  margin: auto;
-  height: 500px;
-  background-color:#86BF3E;
+  background-position: top;
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slides img{
+	max-width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .slides {
-display:none;
+	display:none;
 }
 
 /* previous, next button. */
@@ -3122,7 +3134,7 @@ display:none;
 
 /* Caption text */
 .text {
-	color: #FFFFFF;
+	color: #f2f2f2;
 	position: absolute;
 	font-size: 14px;
 	padding: 8px 12px;
@@ -3160,6 +3172,15 @@ display:none;
 	color: #888;
 }
 
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
 
 /* publication paper */
 .paper-year h2{
