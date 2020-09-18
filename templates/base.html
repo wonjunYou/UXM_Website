@@ -51,6 +51,9 @@
 					</nav>
 				</div>
 				{% block mainview %}
+				<section id="head-title">
+					<h2>{% block headtitle %}{% endblock headtitle %}</h2>
+				</section>
 				{% endblock mainview %}
 			</div>
 				{% block content %}
@@ -75,5 +78,6 @@
 					</ul>
 				</div>
 			</footer>
+		</div>
 	</body>
 </html>

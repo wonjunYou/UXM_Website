@@ -3071,6 +3071,8 @@ footer ul{
 			}
 	}
 
+/* 여기부터 우리가 손댄거 */
+
 /* member */
 .memberTitle {
 	text-align: center;
@@ -3088,6 +3090,7 @@ footer ul{
 	font-weight: bold;
 }
 
+/* intro */
 .slideshow-container {
   background-position: top;
   background-position: center center; 
@@ -3154,9 +3157,9 @@ footer ul{
 	transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+/* .active, .dot:hover {
 	background-color: #717171;
-}
+} */
 
 .fade {
 	-webkit-animation-name: fade;
@@ -3172,6 +3175,7 @@ footer ul{
 	color: #888;
 }
 
+
 @-webkit-keyframes fade {
 	from {opacity: .4}
 	to {opacity: 1}
@@ -3183,16 +3187,17 @@ footer ul{
   }
 
 /* publication paper */
+
 .paper-year h2{
 	font-size: 3rem;
 }
-/* .paper-container {
+.paper-container {
 	background-color: #ffffff;
 	box-shadow: 1px 1px 1px 1px #888888;
 	border-radius: 5px;
 	padding: 10px;
 }
-.paper-dropdown {
+/* .paper-dropdown {
 	background-color: #ffffff;
 	box-shadow: 1px 1px 1px 1px #888888;
 	border-radius: 5px;
@@ -3209,7 +3214,7 @@ footer ul{
 	font-size: 2.5em;
 }
 
-.journal-papers h3 {
+.journal-papers h3, .conference-papers h3 {
 	font-size: 2em;
 }
 .paper>h4{
@@ -3225,4 +3230,82 @@ footer ul{
 	/* background-color: green; */
 	padding: 0 0.5em 0 0.5em;
 	font-size:2em;
+}
+#head-title{
+		position: relative;
+		color: var(--background-color);
+		text-align: center;
+		padding: 2em 0 0 0;
+	}
+
+	#head-title h2 {
+		color: var(--background-color);
+		font-size: 3em;
+	}
+.__container {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1200px;
+}
+.__wrapper {
+	position: relative;
+	background:var(--background-color);
+	overflow-x: hidden;
+	padding: 6em 0 6em 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+	.__container {
+		width: 960px;
+	}
+	
+	.__wrapper {
+		padding: 5em 0 5em 0;
+	}
+	
+	#head-title{
+		padding: 4em 0 0 0;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+
+	.__container {
+		width: 100%;
+	}
+	.__wrapper {
+		padding: 4em 2em 4em 2em;
+	}
+	
+	#head-title{
+		padding: 1.5em 0 0.5em 0;
+	}
+}
+
+@media screen and (max-width: 820px) {
+
+	.__container {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	.__container {
+		width: 100%;
+	}
+
+	.__wrapper {
+		padding: 3em 20px 3em 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.__container {
+		width: 100%;
+	}
+
 }
