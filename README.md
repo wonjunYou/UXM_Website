@@ -9,3 +9,4 @@ Project in Myongji University UX Media Lab
 ## History
 
 ## 디렉터리 구조
+사용 언어: HTML, CSS, Javascript, Pug , Django
